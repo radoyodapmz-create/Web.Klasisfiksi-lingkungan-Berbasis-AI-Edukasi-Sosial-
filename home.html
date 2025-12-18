@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Klasifikasi Lingkungan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+
+    <header>
+        <h1>Web Klasifikasi Lingkungan Berbasis AI</h1>
+        <p>Edukasi Sosial untuk Menjaga Bumi 🌱</p>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h3>Upload Gambar Lingkungan</h3>
+
+            <input type="file" id="imageUpload" accept="image/*">
+            <textarea id="description" placeholder="Masukkan deskripsi gambar..."></textarea>
+            <button onclick="processImage()">Unggah & Klasifikasi</button>
+
+            <div class="result" id="resultSection">
+                <img id="previewImage" src="" alt="Preview">
+                <p id="descOutput"></p>
+                <h4 id="aiResult"></h4>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Edukasi Lingkungan | Bersama menjaga alam untuk masa depan 🌏</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
